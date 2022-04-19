@@ -1,0 +1,349 @@
+/*reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Inicio estilos BODY*/
+body{
+    height: 100vh;
+}
+/*Fin estilos BODY*/
+
+/*Inicio estilos HEADER*/
+.divTopMenu{
+    background-color: #9abab9;
+    padding: 5px;
+    margin-bottom: 5px;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+.divTopMenu li{
+    display: inline-block;
+    margin: 5px;
+    text-transform: uppercase;
+    color: #4b5f5e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.divMenu{    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;   
+}
+
+.menu{
+    justify-content: space-around;
+}
+
+h1{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4b5f5e;
+    font-size: 14px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #718b8b;
+    font-size: 12px;
+    padding: 10px; 
+    margin: 10;
+}
+
+
+/*Transiciones y Animaciones*/
+nav ul li:hover{
+    background-color: whitesmoke;
+    transform: scale(1.2);
+}
+
+/*Inicio estilos MAIN HOME*/
+.mainHome{
+    display: grid;
+    grid-template-areas: "mainHome mainHome";
+    justify-content:center;
+}
+
+.divReservar, .divBook{
+    display: none;
+}
+
+.mainHome{
+    grid-area: mainHome;
+}
+
+.mainHome img{
+    width: 100%;
+    overflow: auto;
+}
+/*Fin estilos MAIN HOME*/
+
+/*Inicio estilos MAIN GALERIA*/
+.mainGaleria{
+    display: grid;
+    grid-template-areas: "imagen1"
+                         "imagen2"
+                         "imagen3";
+    justify-content: center;
+}
+
+.imagen1{
+    grid-area: imagen1;
+}
+
+.imagen2{
+    grid-area: imagen2;
+}
+
+.imagen3{
+    grid-area: imagen3;
+}
+
+.mainGaleria{
+    background-color: antiquewhite;
+}
+
+.mainGaleria img{
+    margin: 5px;
+    padding: 5px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.card-text{
+    display: none;
+}
+
+/*Fin estilos MAIN GALERIA*/
+
+/*Inicio MAIN CONTACTO*/
+.mainContacto{
+    display: grid;
+    grid-template-areas: "divLabelNombre"
+                         "divLabelTelefono"
+                         "divLabelEmail"
+                         "divLabelPais"
+                         "divLabelMensaje"
+                         "divLabelBoton";
+    justify-content: center;
+}
+
+.mainContacto{
+    background-color: antiquewhite;
+}
+
+.divLabelNombre{
+    grid-area: divLabelNombre;
+}
+
+.divLabelTelefono{
+    grid-area: divLabelTelefono;
+}
+
+.divLabelEmail{
+    grid-area: divLabelEmail;
+}
+
+.divLabelPais{
+    grid-area: divLabelPais;
+}
+
+.divLabelMensaje{
+    grid-area: divLabelMensaje;
+}
+
+.divLabelBoton{
+    grid-area: divLabelBoton;
+}
+fieldset{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding: 20px;
+}
+
+legend{
+    font-weight: 700;
+}
+
+.divLabelNombre, .divLabelTelefono, .divLabelEmail, .divLabelPais, .divLabelMensaje, .divLabelBoton{
+    padding: 5px;
+    margin: 20px 0px 20px 0px;
+}
+/*Fin estilos MAIN CONTACTO*/
+
+/*Inicio estilos MAIN HISTORIA*/
+.mainHistoria{
+    display: grid;
+    grid-template-areas: "parrafo1"
+                         "parrafo2";
+    justify-content: center;
+    font-family:'Roboto', sans-serif;
+    font-size: 13px;
+    background-color: antiquewhite;
+}
+
+.parrafo1{
+    grid-area: parrafo1;
+}
+
+.parrafo2{
+    grid-area: parrafo2;
+}
+
+.parrafo1, .parrafo2{
+    padding: 8px;
+    margin: 8px;
+    text-align: center;
+}
+/*Inicio estilos FO0TER*/
+.divFooter{
+    text-align: center;
+}
+
+.divFooter p{
+    color: #7e9a99;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 50px;
+}
+
+.divWhatsapp{
+    grid-area: divWhatsapp;
+}
+
+.divWhatsapp img{
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    height: 50px;
+    width: 50px;
+}
+/*Fin estilos FOOTER*/
+
+@media only screen and (min-width:600px){
+    .mainHome{
+        display: grid;
+        grid-template-areas: "mainHome mainHome";
+        justify-content: center;
+    }
+
+    .divReservar, .divBook{
+        display: flex;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    .divFooter{
+        text-align: center;
+    }
+
+    .divFooter p{
+        font-size: 12px;
+    }
+
+    .mainGaleria{
+        display: grid;
+        grid-template-areas: "imagen1"
+                             "imagen2"
+                             "imagen3";
+        justify-content: center;
+    }
+
+    .mainContacto{
+        display: grid;
+        grid-template-areas: "divLabelNombre"
+                             "divLabelTelefono"
+                             "divLabelEmail"
+                             "divLabelPais"
+                             "divLabelMensaje"
+                             "divLabelBoton";
+        justify-content: center; ;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .mainHome{
+        display: grid;
+        grid-template-areas: "mainHome";
+        justify-content: center;
+    }    
+    
+    h1{
+        font-size: 30px;
+    }     
+    
+    .mainGaleria{
+        display: grid;
+        grid-template-areas: "imagen1 imagen2 imagen3";
+    }
+
+    .mainContacto{
+        display: grid;
+        grid-template-areas: "divLabelNombre"
+                             "divLabelTelefono"
+                             "divLabelEmail"
+                             "divLabelPais"
+                             "divLabelMensaje"
+                             "divLabelBoton";
+        justify-content: left;
+    }
+
+    fieldset{
+        font-size: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+.giftcard{
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    padding: 10px;
+}
+
+.giftcard img{
+    width: 50%;
+    overflow: auto;
+    padding: 10px;
+    
+}
+
+.giftcard p{
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #9abab9;
+
+}
